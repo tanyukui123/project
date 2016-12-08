@@ -1,0 +1,79 @@
+extends ../layout
+
+block style
+ link(href='/plug/swiper/swiper.min.css',rel='stylesheet')
+ link(href='/css/index.css',rel='stylesheet')
+ 
+block scripts
+ script(src='/plug/swiper/swiper.min.js')
+ script(src='/js/index.js')
+
+block content
+ .ms-header
+  .exprt  
+   .exprt-header
+    span.exprt-header-left
+    p.exprt-header-title 推荐专家
+   .exprt-list
+    ._list
+     each item in exprtList
+      a(class="exprt-list-item",href="javascript:void(null)")
+       .item-img
+        img(src=item.image,alt=item.id)
+       .item-info
+        span #{item.name}
+  .search
+   a(class="search-bar",href="/serach") 
+    .search-bar-cont 搜索感兴趣的人或者问题
+ 
+ .ms-content
+  .answer-ul
+   ul.answer-ul-tab
+    li.active 热门回答
+    li 最新回答
+  .answer-list
+   .al-hot
+    each item in newList
+     .al-item
+      .al-item-ques #{item.questionContent}
+      .al-item-answer #{item.toUserName},#{item.toUserBrief}
+      .al-item-listen
+       .listen-avatar.fl 
+        img(src=item.toUserImage,alt="")
+       if(item.questionStatus==1)
+        a(class="add-ask fl",href="javascript:void(null);") 追加悬赏
+       else if(item.questionStatus==2)
+        if(item.answerType==0)
+         a(class="listen-voice fl",href="javascript:void(null);")
+         span.listen-voice-length #{item.audioSecond}
+        else
+         .listen-cont.fl #{item.answerContent}
+       .listen-num.fr
+        .listen-num-1 
+         span #{item.questionPersonNum} 人同问,
+         span #{item.questionListen} 人偷听
+        .listen-num-2
+         span 悬赏金额 #{item.questionAmount} 元
+   .al-new.dn
+    each item in hotList
+     .al-item
+      .al-item-ques #{item.questionContent}
+      .al-item-answer #{item.toUserName},#{item.toUserBrief}
+      .al-item-listen
+       .listen-avatar.fl 
+        img(src=item.toUserImage,alt="")
+       if(item.questionStatus==1)
+        a(class="add-ask fl",href="javascript:void(null);") 追加悬赏
+       else if(item.questionStatus==2)
+        if(item.answerType==0)
+         a(class="listen-voice fl",href="javascript:void(null);")
+         span.listen-voice-length #{item.audioSecond}
+        else
+         .listen-cont.fl #{item.answerContent}
+       .listen-num.fr
+        .listen-num-1 
+         span #{item.questionPersonNum} 人同问,
+         span #{item.questionListen} 人偷听
+        .listen-num-2
+         span 悬赏金额 #{item.questionAmount} 元
+ .ms-bottom

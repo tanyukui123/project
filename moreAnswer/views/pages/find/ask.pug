@@ -1,0 +1,40 @@
+extends ../../layout
+
+block style
+ link(href='/css/find/ask.css',rel='stylesheet')
+
+block scripts
+ script(src='/js/find/ask.js')
+ script(src='http://res.wx.qq.com/open/js/jweixin-1.0.0.js')
+
+block content
+ .qd-header
+  a(class="qd-header-link",href="javascript:void(null);")
+   .qd-header-line
+    ._questioner.fl
+     img(src=question[0].questionerImage)
+    span.fl  #{question[0].questionerName}于#{question[0].questiontime}向#{question[0].answererName}提问
+   p.questionContent #{question[0].questionContent}
+
+ .qd-content
+  .fh-tab
+   ul
+    li.active 语音
+    li 文字
+  .audio
+   p.hint 点击开始录音无需长按
+   p.time 
+   .audio-operate
+    span.l.fl
+     em.l
+    span.c.fl
+    span.c1.fl
+    span.c2.fl
+    span.r.fl
+     em.r
+  .font
+    textarea(placeholder="请输入您的回答")
+    a(class="btn",href="javascript:void(null);") 确定
+
+
+    

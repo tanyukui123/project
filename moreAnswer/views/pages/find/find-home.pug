@@ -1,0 +1,53 @@
+extends ../../layout
+
+block style
+ link(href='/css/find/find-home.css',rel='stylesheet')
+
+block scripts
+ script(src='/js/find/find-home.js')
+
+block content
+ .fh-header
+  ul
+   each item in typeList
+    li(style="background-image:url("+item.categoryImage+")")
+     a(class="fh-header-li",href="javascript:void(null);") #{item.categoryName}
+
+ .fh-main
+  .fh-tab
+   ul
+    li.active 精选答人
+    li 精选热答
+  .fh-panel
+   .fh-pannel-answerlist
+    each item in answerList
+     a(class="fh-panel-item",href="javascript:void(null);")
+      .item-avator.fl
+       img(src=item.userImage,alt="")
+      .item-info.fl
+       .item-info-title #{item.userNickname}
+       p.item-info-brief #{item.userBrief}
+       p.item-info-help 帮助#{item.userAnswerNum}人,收入#{item.userAccount}元
+   .fh-pannel-answerlist.dn
+    each item in questionList
+     .al-item
+      .al-item-ques #{item.questionContent}
+      .al-item-answer #{item.toUserName},#{item.toUserBrief}
+      .al-item-listen
+       .listen-avatar.fl 
+        img(src=item.toUserImage,alt="")
+       if(item.questionStatus==1)
+        a(class="add-ask fl",href="javascript:void(null);") 追加悬赏
+       else if(item.questionStatus==2)
+        if(item.answerType==0)
+         a(class="listen-voice fl",href="javascript:void(null);")
+         span.listen-voice-length #{item.audioSecond}
+        else
+         .listen-cont.fl #{item.answerContent}
+       .listen-num.fr
+        .listen-num-1 
+         span #{item.questionPersonNum} 人同问,
+         span #{item.questionListen} 人偷听
+        .listen-num-2
+         span 悬赏金额 #{item.questionAmount} 元
+ .ms-bottom

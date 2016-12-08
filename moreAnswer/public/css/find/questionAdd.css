@@ -1,0 +1,43 @@
+.que-header
+{
+	padding:0.3704rem;
+	clear:both;
+	overflow: hidden;
+}
+.que-header img
+{
+   width:1.0185rem;
+   height:1.0185rem;
+   border-radius: 5px;
+}
+.que-header-name
+{
+	font-size:0.4444rem;
+	color:#323232;
+	margin-left:0.3704rem;
+	line-height:1.0185rem;
+}
+.que-content
+{
+	padding:0 0.3704rem;
+}
+.que-content-text
+{
+  padding:0.2778rem;
+  background-color: #ccc;
+  border-radius: 5px;
+}
+.que-content-text textarea
+{
+  width:100%;
+  height:3.0556rem;
+  background: transparent;
+  border:none;
+}
+.btn-que
+{
+	background-color: #ff6700;
+	margin-top:0.3704rem;
+	line-height:1.1111rem;
+	font-size:0.3704rem;
+}

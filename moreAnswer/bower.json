@@ -1,0 +1,25 @@
+{
+  "name": "moreAnswer",
+  "homepage": "https://github.com/acc_mzdeng/moreAnswer",
+  "authors": [
+    "mzdeng"
+  ],
+  "description": "moreAnswer projects",
+  "main": "",
+  "keywords": [
+    "moreAnswer"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/libs",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "weui": "^1.1.0"
+  }
+}

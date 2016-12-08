@@ -1,0 +1,74 @@
+extends ../../layout
+
+block style
+ link(href='/css/find/question-detail.css',rel='stylesheet')
+
+block scripts
+ script(src='/js/find/question-detail.js')
+
+block content
+ each item in detailList
+  .qd-header
+   a(class="qd-header-link",href="javascript:void(null);")
+    .qd-header-line
+     ._answererAvator.fl
+      img(src=item.answererImage)
+     ._answererName.fl
+      p.answererName #{item.answererName}
+      p.help 帮助#{item.helpNum}人，收入#{item.answererIncome}
+     .answererMore.fr
+    .answererBrife
+     p.userName #{item.answererBrife}
+
+  .qd-content
+   .questionInfo
+    .que-header
+     a(class="que-header-user fl",href="javascript:void(null);")
+      img(src=item.questionerImage,alt="")
+     .que-header-titel.fl #{item.questionerName}于#{item.questiontime}向#{item.answererName}提问
+     a(class="que-tip fr")
+    .que-content 
+     p #{item.questionContent}
+    .que-worth
+     .que-worth-item 价值:
+      span.red ￥#{item.questionWorth}
+     .que-worth-item.tc 同问:
+      span.red #{item.questionAdd}人
+     .que-worth-item.tr 剩余:
+      span.red #{item.questionExpire}天
+    if(item.questionStatus == 2)
+     if(item.answerType==0)
+      .answer-voice
+       .answer-voice-avator.fl
+        img(src=item.questionerImage,alt="")
+       a(class="listen-voice",href="javascript:void(null);").fl
+        audio(src=item.audioUrl,controls="controls")
+       .listen-voice-length.fl #{item.audioSecond}"
+     if(item.answerType==1)
+      .answer-voice
+       .answer-voice-avator.fl
+        img(src=item.questionerImage,alt="")
+       .listen-content.fl #{item.answerContent}
+     if(item.questionAdd == 0)
+      a(class="questionAdd",href="javascript:void(null);")
+    else if(item.questionStatus==1)
+     .que-options
+      .que-option-item 1元
+      .que-option-item 3元
+      .que-option-item 5元
+      .que-option-more 更多
+     .que-options-tip 问题未回答将自动退款
+    else
+     .que-expire 该问题已过期，不支持追加悬赏
+   if(questionAddList.length>0)
+    .recent-addQ
+     .recent-addQ-title 近期同问
+     each que in questionAddList
+      .recent-addQ-content
+       .recent-avator.fl 
+        img(src=que.addImage,alt="")
+       .recent-name.fl #{que.addName} 
+       .recent-money.fr ￥#{que.addMoney}
+  .ms-bottom
+
+    

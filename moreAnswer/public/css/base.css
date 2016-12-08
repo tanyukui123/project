@@ -1,0 +1,59 @@
+input:focus,
+a:focus {
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+    color: #646464;
+}
+
+a, button, input, textarea {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+ol, ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body {
+    font-family: "Microsoft Yahei", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin:0;
+    padding:0;
+    background-color: #f0eff5;
+    color:#323232;
+}
+
+/*基本样式*/
+.dn
+{
+    display:none;
+}
+.dlb
+{
+    display:inline-block;
+}
+.fl
+{
+    float:left;
+}
+.fr
+{
+    float:right;
+}
+.tc
+{
+    text-align: center;
+}
+.tr
+{
+    text-align: right;
+}
+/*底部高度*/
+.ms-bottom
+{
+  height:1.7593rem;
+}

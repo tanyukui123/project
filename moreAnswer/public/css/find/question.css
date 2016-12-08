@@ -1,0 +1,98 @@
+body
+{
+	background-color: #fff;
+}
+.qa-header
+{
+	padding:0.3704rem;
+	clear:both;
+	overflow: hidden;
+}
+.qa-header img
+{
+   width:1.0185rem;
+   height:1.0185rem;
+   border-radius: 5px;
+}
+.qa-header-name
+{
+	font-size:0.4444rem;
+	color:#323232;
+	margin-left:0.3704rem;
+	line-height:1.0185rem;
+}
+.qa-content
+{
+	padding:0 0.3704rem;
+}
+.qa-content-que
+{
+  padding:0.3704rem;
+  background-color: #ccc;
+  border-radius: 5px;
+}
+.qa-content-que textarea
+{
+  width:100%;
+  height:3.0556rem;
+  background: transparent;
+  border:none;
+}
+.weui-cell_switch
+{
+	padding:0.2778rem 0;
+}
+.weui-cell__bd
+{
+	font-size:0.3704rem;
+}
+.qa-content-worth
+{
+	margin-top:0.1852rem;
+}
+.worth-title
+{
+ font-size:0.3704rem;
+ text-align: center;
+ padding:0.1852rem 0;
+}
+.worth-title span
+{
+	color:#ff6800;
+}
+.worth-options-label 
+{
+	padding:0.1852rem 0;
+}
+.price
+{
+  color:#000;
+  line-height:0.5556rem;
+}
+.priceLabel
+{
+	margin-left:0.1852rem;
+	background-color: #1ccea5;
+	color:#fff;
+	padding:0.0463rem 0.2778rem;
+}
+.priceExplain
+{
+	color:#646464;
+	line-height:0.5556rem;
+}
+.worth-tips
+{
+	color:#646464;
+	padding:0.1852rem 0;
+	margin-bottom:0.3704rem;
+	font-size:0.3704rem;
+}
+.btn-que
+{
+	background-color: #ff6700;
+	margin-top:0.3704rem;
+	line-height:1.1111rem;
+	font-size:0.3704rem;
+	margin-bottom:0.3704rem;
+}

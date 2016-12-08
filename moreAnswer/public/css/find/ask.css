@@ -1,0 +1,151 @@
+body
+{
+	background-color: #fff;
+}
+/*头部*/
+.qd-header
+{
+	padding:0.5556rem 0.3704rem 0 0.3704rem;
+}
+.qd-header-link
+{
+	display:block;
+	-webkit-tap-highlight-color: rgba(215,215,215,.3);	
+	padding-bottom:0.5556rem;
+}
+.qd-header-line
+{
+  clear: both;
+  overflow: hidden;
+}
+.qd-header-line img{
+  width:1.08rem;
+  height:1.08rem;
+  border-radius: 50%;
+}
+.qd-header-line span{
+	margin-left:0.30rem;
+	line-height:1.08rem;
+	font-size:0.42rem;
+	color:#323232;
+}
+.questionContent{
+	font-size:0.40rem;
+	line-height:0.56rem;
+	color:#646464;
+}
+/*content*/
+.qd-content{
+	padding:0.5556rem 0.3704rem 0 0.3704rem;
+	font-size:0.42rem;
+	line-height:0.56rem;
+}
+.fh-tab ul
+{
+	height:0.8796rem;
+	line-height:0.8796rem;
+}
+.fh-tab ul li
+{
+	width:50%;
+	display:inline-block;
+	font-size:0.3519rem;
+	text-align: center;
+	border-bottom:2px solid #c7c7c7;
+}
+.fh-tab ul li.active
+{
+	border-bottom:2px solid #d43d3d;
+	color:#d43d3d;
+}
+/*audio*/
+.audio{
+	display:block;
+}
+.hint{
+	text-align:center;
+	color:#646464;
+	margin-top:1.25rem;
+}
+.audio-operate{
+	margin:0 auto;
+	width:5.55rem;
+	height:1.94rem;
+}
+.audio-operate span:nth-child(1){
+	width:1.80rem;
+	height:1.93rem;
+	
+}
+.audio-operate em{
+	display:block;
+	width:1.80rem;
+	height:1.93rem;
+}
+em.l{
+	background:url(/img/delete.png) no-repeat left bottom;
+	display:none;
+}
+em.r{
+	background:url(/img/ok.png) no-repeat right bottom;
+	display:none;
+}
+.audio-operate span:nth-child(2){
+	display:block;
+	width:1.95rem;
+	height:1.93rem;
+	background:url(/img/voice.jpg) no-repeat;
+	background-size:cover;
+}
+.audio-operate span:nth-child(3){
+	display:none;
+	width:1.95rem;
+	height:1.93rem;
+	background:url(/img/voice-b.png) no-repeat;
+	background-size:cover;
+}
+.audio-operate span:nth-child(4){
+	display:none;
+	width:1.95rem;
+	height:1.93rem;
+	background:url(/img/voice-z.png) no-repeat;
+	background-size:cover;
+}
+.audio-operate span:nth-child(5){
+	width:1.80rem;
+	height:1.93rem;
+}
+.time{
+	margin:0.20rem;
+	height:56px;
+	text-align:center;
+}
+/*font*/
+.font{
+	display:none;
+}
+textarea{
+	width:8.47rem;
+	height:3.54rem;
+	outline:none;
+	border:none;
+	background:#ccc;
+	margin-top:1rem;
+	border-radius:10px;	
+	padding:0.4rem;
+	font-size:0.42rem;
+	line-height:0.56rem;
+}
+.btn{
+	display:block;
+	width:9.27rem;
+	height:1.27rem;
+	background:#ff6600;
+	line-height:1.27rem;
+	color:#fff;
+	text-align:center;
+	outline:none;
+	font-size:0.42rem;
+	border-radius:10px;
+	margin-top:1.58rem;
+}

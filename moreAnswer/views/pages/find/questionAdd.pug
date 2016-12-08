@@ -1,0 +1,13 @@
+extends ../../layout
+
+block style
+ link(href='/css/find/questionAdd.css',rel='stylesheet')
+
+block content
+ .que-header
+  img(src=answererImage,class="que-header-avator fl",alt="")
+  .que-header-name.fl #{answererName}
+ .que-content
+  .que-content-text
+   textarea(resize="none")
+  a.weui-btn.btn-que 提问

@@ -1,0 +1,50 @@
+extends ../../layout
+
+block style
+ link(href='/css/find/question.css',rel='stylesheet')
+
+block content
+ .qa-header
+  img(src=answererImage,class="que-header-avator fl",alt="")
+  .qa-header-name.fl #{answererName}
+ .qa-content
+  .weui-cell.weui-cell_switch
+   .weui-cell__bd 问题是否公开
+   .weui-cell__ft
+    input(class="weui-switch",type="checkbox")
+  .qa-content-que
+   textarea(resize="none",placehold="请输入问题，提问问题被成功回答，答案每次都偷听，您将从中分成0.5元")
+  .qa-content-worth
+   .worth-title 向它提问需要
+    span ￥#{worth}
+   .worth-options
+    .weui-cells.weui-cells_checkbox
+     label.weui-cell.weui-check__label.worth-options-label 
+      .weui-cell__bd
+       p.price ￥#{priceHalf}
+        span.priceLabel 半价
+       p.priceExplain 半价提问，发起重筹，让同问题答友助你一臂之力
+      .weui-cell__hd
+       input(type="checkbox",class="weui-check",name="checkbox1",id="s11",checked="checked")
+       i.weui-icon-checked    
+     label.weui-cell.weui-check__label.worth-options-label 
+      .weui-cell__bd
+       p.price ￥#{priceAll}
+        span.priceLabel 全价
+       p.priceExplain 全价提问，让你的问题脱颖而出
+      .weui-cell__hd
+       input(type="checkbox",class="weui-check",name="checkbox1",id="s11",checked="checked")
+       i.weui-icon-checked
+     label.weui-cell.weui-check__label.worth-options-label 
+      .weui-cell__bd
+       p.price 更多(更多金额)
+       p.priceExplain 骨灰级粉丝，爱的首选
+      .weui-cell__hd
+       input(type="checkbox",class="weui-check",name="checkbox1",id="s11",checked="checked")
+       i.weui-icon-checked
+    .worth-tips 问题超过7天未回答将原路退回
+    a.weui-btn.btn-que 提问
+ .ms-bottom
+
+
+

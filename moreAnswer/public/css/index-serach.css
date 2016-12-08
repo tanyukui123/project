@@ -1,0 +1,136 @@
+/*搜索*/
+.search
+{
+	padding:0.4167rem 0.3704rem;
+	background-color: #fff;
+}
+.search-bar
+{
+   height:1.0185rem;
+}
+.weui-icon-clear, .weui-icon-search
+{
+	font-size:0.2778rem;
+}
+.weui-search-bar__label span
+{
+	font-size:0.2778rem;
+}
+.weui-search-bar__box .weui-search-bar__input
+{
+  font-size:0.2778rem;
+  padding:0.2778rem 0;
+}
+.weui-search-bar__box .weui-icon-search
+{
+  line-height:0.9259rem;
+}
+#searchClear
+{
+ line-height:0.9259rem;
+}
+.weui-search-bar__cancel-btn
+{
+  line-height:1.0185rem;
+  color:#646464;
+}
+/*相关用户*/
+.result-users
+{
+  background-color: #fff;
+}
+.ru-header
+{
+	padding:0.5556rem 0.3704rem;
+}
+.ru-header-title
+{
+	font-size:0.3889rem;
+	color:#282828;
+}
+.title-num
+{
+	font-size:0.3889rem;
+	color:#d33e3d;
+	margin-left:0.0926rem;
+}
+.link
+{
+	width:0.213rem;
+	height:0.3704rem;
+	background: url(../img/arrow-red.png) no-repeat center center;
+	background-size:.213rem auto;
+	display:inline-block;
+}
+.ru-detail-item
+{
+  padding:0.3704rem;
+  border-top:1px solid rgba(215,215,215,.3);
+}
+.user-avatar img
+{
+   width:1.0185rem;
+   height:1.0185rem;
+   border-radius: 50%;
+} 
+.user-info
+{
+	margin-left:1.2963rem;
+}
+.user-info-name
+{
+	font-size:0.3889rem;
+	color:#323232;
+}
+.user-info-gains
+{
+	font-size:0.3333rem;
+	color:#909090;
+}
+.result-questions
+{
+	margin-top:0.2778rem;
+	background-color: #fff;
+}
+.rq-header
+{
+	padding:0.5556rem 0.3704rem;
+}
+.rq-header-title
+{
+	font-size:0.3889rem;
+	color:#282828;
+}
+.rq-detail-item
+{
+	font-size:0.3519rem;
+	padding:0.3704rem;
+	border-top:1px solid rgba(215,215,215,.3);
+}
+.question-info-status
+{
+	color:#fff;
+	padding:0.1852rem;
+	display:inline-block;
+	border-radius: 5px;
+}
+.answering
+{
+	background-color: #1ccea5;
+}
+.answered
+{
+	background-color: #ff6700;
+}
+.question-info-thesame,.question-info-questionListen
+{
+  color:#999;
+  display:inline-block;
+  margin-left:0.1852rem;
+}
+.question-content
+{
+	line-height:0.5556rem;
+	color:#323232;
+	padding-top:0.0926rem;
+}

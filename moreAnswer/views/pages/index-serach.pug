@@ -1,0 +1,56 @@
+doctype
+html
+ head
+  meta(charset="utf-8")
+  title #{title}
+  script(src='/libs/flexible.js')
+  link(href='/libs/weui/dist/style/weui.min.css',rel='stylesheet')
+  link(href='/css/base.css',rel='stylesheet')
+  link(href='/css/index-serach.css',rel='stylesheet')
+  script(src='/libs/zepto.min.js')
+  script(src='/libs/weui/src/example/weui.min.js')
+  script(src='/js/index-serach.js')
+ body
+  .search
+   .weui-search-bar.search-bar#searchBar
+    form.weui-search-bar__form
+     .weui-search-bar__box
+      i.weui-icon-search
+      input(type="search",placeholder="搜索答人或者问题",class="weui-search-bar__input",id="searchInput")
+      a(href="javascript:void(null)",class="weui-icon-clear",id="searchClear")
+     label.weui-search-bar__label#searchText
+      i.weui-icon-search
+      span 搜索答人或者问题
+    a(href="javascript:",class="weui-search-bar__cancel-btn",id="searchCancel") 取消
+  
+  .result
+   .result-users
+    .ru-header 
+     span.ru-header-title 相关用户
+      span.title-num (#{userNum})
+     a(class="link fr",href="javascript:void(null);")
+    .ru-detail
+     each item in userList
+      .ru-detail-item
+       a(class="user-avatar fl",href="javascript:void(null);")
+        img(src=item.userImage)
+       .user-info
+        .user-info-name #{item.userName}
+        .user-info-gains 帮助#{item.personNum}人，收入#{item.money}元
+
+   .result-questions
+    .rq-header
+     span.rq-header-title 相关问题
+      span.title-num (#{auestionNum})
+     a(class="link fr",href="javascript:void(null);")
+    .rq-detail
+     each item in questionList
+      .rq-detail-item
+       .question-info
+        if(item.status==0)
+         .question-info-status.answering 已回答
+        else
+         .question-info-status.answered 未回答
+        .question-info-thesame 同问#{item.thesame}人
+        .question-info-questionListen 偷听#{item.questionListen}人
+       .question-content #{item.questionContent}

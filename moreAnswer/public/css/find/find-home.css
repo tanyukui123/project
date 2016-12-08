@@ -1,0 +1,182 @@
+.fh-header
+{
+  padding:0 0.3704rem 0.3704rem 0.3704rem;
+  background-color: #fff;
+}
+.fh-header ul li
+{
+	position: relative;
+	width:2.037rem;
+	height:0.9259rem;
+	border-radius: 5px;
+	display: inline-block;
+  background-repeat: no-repeat;
+  background-position: center center; 
+	background-size:2.037rem auto;
+	margin-right:0.3704rem;
+	margin-top:0.3704rem;
+}
+.fh-header ul li:nth-child(4n)
+{
+	margin-right:0;
+}
+.fh-header ul li a
+{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:0.9259rem;
+  line-height:0.9259rem;
+  background-color:rgba(0,0,0,.4);
+  color:#fff;
+  text-align: center;
+  border-radius: 5px;
+}
+.fh-main
+{
+  padding:0 0.3704rem;
+  background-color: #fff;
+}
+.fh-tab ul
+{
+	height:0.8796rem;
+	line-height:0.8796rem;
+	border:2px solid #d43d3d;
+	border-radius: 5px;
+}
+.fh-tab ul li
+{
+	width:50%;
+	display:inline-block;
+	font-size:0.3519rem;
+	color:#d43d3d;
+	text-align: center;
+}
+.fh-tab ul li.active
+{
+	background-color: #d43d3d;
+	color:#fff;
+}
+.fh-panel-item
+{
+  display: block;
+  padding:0.5556rem 0;
+  clear: both;
+  overflow: hidden;
+  border-bottom:1px solid rgba(215,215,215,.3); 
+}
+.item-avator img
+{
+	width:1.5741rem;
+	height:1.5741rem;
+	border-radius: 5px;
+}
+.item-info
+{
+	margin-left:0.3704rem;
+}
+.item-info-title
+{
+	font-size:0.3889rem;
+	color:#323232;
+}
+.item-info-brief
+{
+	font-size:0.3704rem;
+	color:#909090;
+  width: 5.671rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.item-info-help
+{
+	font-size:0.3333rem;
+
+	color:#646464;
+}
+.al-hot
+{
+  overflow: hidden;
+}
+.al-item
+{
+  padding:0.3704rem 0;
+  border-bottom:1px solid rgba(100,100,100,.3);
+}
+.al-item:last-child
+{
+  border-bottom:none;
+}
+.al-item-ques
+{
+  line-height:0.5556rem;
+  color:#323232;
+  font-size:0.3704rem;
+}
+.al-item-answer
+{
+  line-height:0.5556rem;
+  color:#909090;
+  font-size:0.3333rem;
+}
+.al-item-listen
+{
+  padding:0.1852rem 0;
+  overflow: hidden;
+}
+.listen-avatar img
+{
+  width:0.9259rem;
+  height:1.0185rem;
+  border-radius: 5px;
+}
+.add-ask
+{
+  width:3.0093rem;
+  height:0.8796rem;
+  line-height:0.8796rem;
+  background-color: #ff9a65;
+  border-radius: 5px;
+  text-align: center;
+  font-size:0.3704rem;
+  color:#fff;
+  margin-left:0.3704rem;
+  margin-top:0.0926rem;
+}
+.listen-voice
+{
+  width:3.0093rem;
+  height:0.8796rem;
+  background:url(../img/btn-listen.png) no-repeat center center;
+  background-size:3.0093rem auto;
+  font-size:0.3704rem;
+  color:#fff;
+  margin-left:0.3704rem;
+  margin-top:0.0926rem;
+}
+.listen-voice-length
+{
+  font-size:0.3333rem;
+  color:#ccc;
+}
+.listen-cont
+{
+  width:3.0093rem;
+  height:0.8796rem;
+  line-height:0.8796rem;
+  background-color: #1ccea5;
+  border-radius: 5px;
+  text-align: center;
+  font-size:0.3704rem;
+  color:#fff;
+  margin-left:0.3704rem;
+  margin-top:0.0926rem;
+}
+.listen-num
+{
+  text-align: right;
+  font-size:0.2778rem;
+  color:#646464;
+}

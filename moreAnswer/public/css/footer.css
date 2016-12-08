@@ -1,0 +1,61 @@
+.footer
+{
+	position:fixed;
+	bottom:0;
+	left:0;
+	width:100%;
+	background-color: #fff;
+	display: flex;
+	-webkit-display:flex;
+	padding:0.185185rem 0;
+	box-shadow: 0 -3px 10px #ccc;
+	z-index:100;
+}
+.f-tab
+{
+	flex: 1;
+	-webkit-flex:1;
+	text-align: center;
+}
+.f-tab-home
+{
+	width:0.805556rem;
+	height:1.333333rem;
+	margin:0 auto;
+	background:url(../img/bottom-home.png) no-repeat center center;
+	background-size:100% auto;
+	display:inline-block;
+}
+.home-red
+{
+	background:url(../img/bottom-home-red.png) no-repeat center center;
+	background-size:100% auto;
+}
+.f-tab-find
+{
+	width:0.787037rem;
+	height:1.333333rem;
+	margin:0 auto;
+	background:url(../img/bottom-find.png) no-repeat center center;
+	background-size:100% auto;
+	display:inline-block;
+}
+.find-red
+{
+	background:url(../img/bottom-find-red.png) no-repeat center center;
+	background-size:100% auto;
+}
+.f-tab-mine
+{
+	width:0.777778rem;
+	height:1.333333rem;
+	margin:0 auto;
+	background:url(../img/bottom-mine.png) no-repeat center center;
+	background-size:100% auto;
+	display:inline-block;
+}
+.mine-red
+{
+	background:url(../img/bottom-mine-red.png) no-repeat center center;
+	background-size:100% auto;
+}
